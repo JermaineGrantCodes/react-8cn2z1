@@ -2,16 +2,17 @@ import React from "react";
 import "./style.css";
 
 
-function App (prop){
-
-  function toString(prop){
-return "[" + "name = " + prop.name + ", id = "+ prop.id+ ",datePurchased = " + prop.datePurchased +"]";
-  }
+function ProductPanel(){
+return(
+  <div>
+<input placeholder="some value"></input>
+  </div>
+);
 }
+  
 export default function App() {
   return (
     <div>
-      {toString(prop)};
     </div>
   );
 }
