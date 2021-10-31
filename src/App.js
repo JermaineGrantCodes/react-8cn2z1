@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div>
    <Product name = "Apple" id="item1" datePurchased = {Date()} ></Product>
-   <MedicalTreatment treatId = "400"/>
+   <MedicalTreatment treatId = "400" type = "Radiography"/>
   </div>
 
   );
