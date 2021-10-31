@@ -1,7 +1,7 @@
 
 import React from "react";
 
-function ProductPanel (){
+function MedicalTreatment (){
 //React Hooks:
 
 const [productName, setProductName] = React.useState();
@@ -31,4 +31,4 @@ return (
 
 }
 
-export default ProductPanel;
+export default MedicalTreatment;
