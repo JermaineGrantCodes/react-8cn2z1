@@ -7,7 +7,7 @@ function MedicalTreatment (props){
 
 return (
   <div>
-This is a {props.Id}
+Treatment ID: {props.treatId}
 
 
   </div>
