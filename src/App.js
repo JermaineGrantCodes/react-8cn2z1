@@ -1,15 +1,15 @@
 import React from "react";
 import "./style.css";
-import Product from "./Product";
 import MedicalTreatment from "./MedicalTreatment";
+import MedicalTreatmentList from "./MedicalTreatmentList";
 
 
   
 export default function App() {
   return (
     <div>
-   <Product name = "Apple" id="item1" datePurchased = {Date()} ></Product>
-   <MedicalTreatment treatId = "400" type = "Radiography"/>
+   <MedicalTreatment treatId = "400" type = "Ultrasound" treatCourseId = "1212" category = "Radiography" name = "Susan Hill" startDate = {Date()}/>
+   <MedicalTreatmentList/>
   </div>
 
   );
