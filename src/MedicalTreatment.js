@@ -10,6 +10,7 @@ function MedicalTreatment (props){
 <h1> Category: {props.category}</h1>
 <h1> Patient Name: {props.name}</h1>
 <h1> Start Date: {props.startDate}</h1>
+
     </div>
   );
 
