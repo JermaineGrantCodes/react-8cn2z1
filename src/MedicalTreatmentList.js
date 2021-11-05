@@ -12,14 +12,16 @@ const records = [
 const listTreatment = records.map(person => 
     <li key = {person.patientId}>{person.treatment} - {person.patientName}</li>)
 
+const filteredOption = records.filter(name => name.length > 3);
 //const records = props.records;
+
 
 function MedicalTratmentList(){ 
   return (
 
 <div>
 
-    <ul>{listTreatment}</ul> 
+    <ul> {listTreatment} </ul> 
    
 </div>
 
