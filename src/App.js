@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import MedicalTreatment from "./MedicalTreatment";
 import MedicalTreatmentList from "./MedicalTreatmentList";
-
+import MedicalTreatmentPanel from "./MedicalTreatmentPanel";
 
 
   
@@ -11,6 +11,7 @@ export default function App() {
     <div>
    <MedicalTreatment treatId = "400" type = "Ultrasound" treatCourseId = "1212" category = "Radiography" name = "Susan Hill" startDate = {Date()}/>
    <MedicalTreatmentList/>
+   <MedicalTreatmentPanel/>
   </div>
 
   );

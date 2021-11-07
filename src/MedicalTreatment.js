@@ -1,5 +1,4 @@
 import React from "react";
-
 // Adding properties to component MedicalTreatment
 function MedicalTreatment (props){
    return (
