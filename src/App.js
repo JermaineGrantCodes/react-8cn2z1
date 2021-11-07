@@ -4,6 +4,7 @@ import MedicalTreatment from "./MedicalTreatment";
 import MedicalTreatmentList from "./MedicalTreatmentList";
 
 
+
   
 export default function App() {
   return (
