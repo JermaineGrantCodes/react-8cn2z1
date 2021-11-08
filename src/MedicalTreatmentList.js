@@ -24,7 +24,7 @@ function MedicalTratmentList(){
 <div> 
 <hr/>
 <h2>Hospital Registry</h2>
-<input type = 'text' onChange = {(e) => filterNames(e)} />
+<input type = "text" onChange = {(e) => filterNames(e)} />
     <ul> 
       {names.map(name =>{
         return <li key={name.patientId}>{name.patientName} - {name.treatment}</li>
