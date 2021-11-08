@@ -13,7 +13,7 @@ function MedicalTreatmentPanel(){
       window.alert("[" + "Treatment ID = " + treatId + ", Treatment Course ID = " + treatCourseId+ ", Type = " + type + ", Category = " + category + ", Name = " + name + ", Start Date = " + startDate + "]");
 
   }
-
+//Function to clear and restore text fields to default state
   function clearEventHandler () {
     setTreatId('');
     setTreatCourseId('');
