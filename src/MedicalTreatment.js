@@ -3,12 +3,12 @@ import React from "react";
 function MedicalTreatment (props){
    return (
     <div> 
-<h2> Treatment ID: {props.treatId}</h2>
-<h2> Treatment Course ID: {props.treatCourseId}</h2>
-<h2> Type: {props.type}</h2>
-<h2> Category: {props.category}</h2>
-<h2> Patient Name: {props.name}</h2>
-<h2> Start Date: {props.startDate}</h2>
+<h3> Treatment ID: {props.treatId}</h3>
+<h3> Treatment Course ID: {props.treatCourseId}</h3>
+<h3> Type: {props.type}</h3>
+<h3> Category: {props.category}</h3>
+<h3> Patient Name: {props.name}</h3>
+<h3> Start Date: {props.startDate}</h3>
 
     </div>
   );
