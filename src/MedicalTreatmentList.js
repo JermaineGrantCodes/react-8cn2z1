@@ -1,7 +1,7 @@
 import React from "react";
-
+// Creating a React component called MedicalTreatmentList
 function MedicalTratmentList(){ 
-  // Creating a constant of a JSON array list to be filtered and mapped.
+// Creating a constant variable of an array list to be filtered and mapped.
   const records = [
     {patientId: 1, patientName: 'Kelly Wood', treatment: 'Dialysis'},
     {patientId: 2, patientName: 'Craig Fitzgerald', treatment: 'Chemotherapy'},
@@ -24,7 +24,7 @@ function MedicalTratmentList(){
 <div> 
 <hr/>
 <h2>Hospital Registry</h2>
-<input type = "text" onChange = {(e) => filterNames(e)} />
+<input placeholder = "Type Name..." onChange = {(e) => filterNames(e)} />
     <ul> 
       {names.map(name =>{
         return <li key={name.patientId}>{name.patientName} - {name.treatment}</li>

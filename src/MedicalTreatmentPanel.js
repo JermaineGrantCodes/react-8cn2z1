@@ -8,12 +8,12 @@ function MedicalTreatmentPanel(){
   const [category, setCategory] = React.useState('');
   const [name, setName] = React.useState('');
   const [startDate, setStartDate] = React.useState('');
-
+// Function to display data binded text in pop-up window
   function eventHandler () {
       window.alert("[" + "Treatment ID = " + treatId + ", Treatment Course ID = " + treatCourseId+ ", Type = " + type + ", Category = " + category + ", Name = " + name + ", Start Date = " + startDate + "]");
 
   }
-//Function to clear and restore text fields to default state
+// Function to clear and restore text fields to default state
   function clearEventHandler () {
     setTreatId('');
     setTreatCourseId('');
