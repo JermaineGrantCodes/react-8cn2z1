@@ -6,17 +6,29 @@ import MedicalTreatmentPanel from "./MedicalTreatmentPanel";
 
 
   
-export default function App() {
+function App() {
+
+// Creating a constant variable of an array list to be filtered and mapped.
+  const records = [
+    {patientId: 1, patientName: 'Kelly Wood', treatment: 'Dialysis'},
+    {patientId: 2, patientName: 'Craig Fitzgerald', treatment: 'Chemotherapy'},
+    {patientId: 3, patientName: 'Marlene Grant', treatment: 'Physiotherapy'},
+    {patientId: 4, patientName: 'Roger Adams', treatment: 'Blood Transfusion'},
+    {patientId: 5, patientName: 'Ashley Roberts', treatment: 'Accupuncture'}
+     ];
+  
+  const recordsText = JSON.stringify(records);  
+
+// Providing instances for each React component with arbitrary data
   return (
+    
     <div>
    <MedicalTreatment treatId = "400" type = "Ultrasound" treatCourseId = "1212" category = "Radiography" name = "Susan Hill" startDate = {Date()}/>
-   <MedicalTreatmentList/>
+   <MedicalTreatmentList medicalJson = {recordsText}/>
    <MedicalTreatmentPanel/>
   </div>
 
   );
 }
 
-
-
-//<input placeholder="Product ID" value={productId} onChange = {e => setProductID(e.target.value)} ></input>
+export default App;

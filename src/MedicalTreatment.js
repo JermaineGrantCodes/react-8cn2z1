@@ -1,7 +1,10 @@
 import React from "react";
-// Adding properties to component MedicalTreatment
+
+// Creating a React component called MedicalTreatment
 function MedicalTreatment (props){
-   return (
+   
+  return (
+    
     <div> 
 <h3> Treatment ID: {props.treatId}</h3>
 <h3> Treatment Course ID: {props.treatCourseId}</h3>
