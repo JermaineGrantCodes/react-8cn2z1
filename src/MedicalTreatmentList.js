@@ -28,7 +28,6 @@ function MedicalTreatmentList(props){
         return <li key={list.patientId}>{list.patientName} - {list.treatment}</li>
       })} 
       </ul> 
-
 </div>
 
  );
