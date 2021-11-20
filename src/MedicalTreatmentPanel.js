@@ -9,7 +9,7 @@ function MedicalTreatmentPanel(){
   const [name, setName] = React.useState('');
   const [startDate, setStartDate] = React.useState('');
 
-// Function to display data binded text in pop-up window
+// Function to display data binded text in a pop-up window.
   function eventHandler () {
       window.alert("[" + "Treatment ID = " + treatId + ", Treatment Course ID = " + treatCourseId+ ", Type = " + type + ", Category = " + category + ", Name = " + name + ", Start Date = " + startDate + "]");
   }
