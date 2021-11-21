@@ -1,7 +1,10 @@
+// Importing values from exported module.
 import React from "react";
 
+// Creating a React component called MedicalTreatmentList.
 function MedicalTreatmentPanel(){
   
+// Using React Hooks expression useState with the parameter and setter method to empty string.
   const [treatId, setTreatId] = React.useState('');
   const [treatCourseId, setTreatCourseId] = React.useState('');
   const [type, setType] = React.useState('');
@@ -14,7 +17,7 @@ function MedicalTreatmentPanel(){
       window.alert("[" + "Treatment ID = " + treatId + ", Treatment Course ID = " + treatCourseId+ ", Type = " + type + ", Category = " + category + ", Name = " + name + ", Start Date = " + startDate + "]");
   }
   
-// Function to clear and restore text fields to default state
+// Function to clear and restore text fields to default state using setter methods.
   function clearEventHandler () {
     setTreatId('');
     setTreatCourseId('');
@@ -26,9 +29,10 @@ function MedicalTreatmentPanel(){
 
 return (
 
-<div>
+  <div>
 <hr/>
 <h2>Treatment Booking</h2>
+{/* Returning placeholders that will bind values according to change of input state from event.*/}
 <input placeholder= "Treatment ID" value = {treatId} onChange = {e => setTreatId(e.target.value)}></input>
 <br/>
 <input placeholder= "Treatment Course ID" value = {treatCourseId} onChange = {e => setTreatCourseId(e.target.value)}></input> 
@@ -37,16 +41,17 @@ return (
 <br/>
 <input placeholder= "Category" value = {category} onChange = {e => setCategory (e.target.value)}></input>
 <br/>
-<input placeholder= "Name" value = {name} onChange = {e => setName (e.target.value)}></input>
+<input placeholder= "Full Name" value = {name} onChange = {e => setName (e.target.value)}></input>
 <br/>
-<input placeholder= "Start Date 07/10/22" value = {startDate} onChange = {e => setStartDate (e.target.value)} ></input>
+<input placeholder= "Start Date" value = {startDate} onChange = {e => setStartDate (e.target.value)} ></input>
 <br/>
+{/* Creating buttons to bind and display data entered, or clear input fields on click.*/}
 <button style={{color:"green"}} onClick={eventHandler}>Display</button>
 <button style={{color:"red"}} onClick={clearEventHandler}>Clear</button>
   </div>
  
-
  );
 }
 
+// Exporting module for importing to component.
 export default MedicalTreatmentPanel;

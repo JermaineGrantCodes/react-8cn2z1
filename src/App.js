@@ -1,10 +1,8 @@
+// Importing values from exported module.
 import React from "react";
-import "./style.css";
 import MedicalTreatment from "./MedicalTreatment";
 import MedicalTreatmentList from "./MedicalTreatmentList";
 import MedicalTreatmentPanel from "./MedicalTreatmentPanel";
-
-
   
 function App() {
 
@@ -19,10 +17,10 @@ function App() {
   
   const recordsText = JSON.stringify(records);  
 
-// Providing instances for each React component with arbitrary data
   return (
     
     <div>
+  {/*Providing instances for each React component with arbitrary data*/}
    <MedicalTreatment treatId = "400" type = "Ultrasound" treatCourseId = "1212" category = "Radiography" name = "Susan Hill" startDate = {Date()}/>
    <MedicalTreatmentList medicalJson = {recordsText}/>
    <MedicalTreatmentPanel/>
@@ -31,4 +29,5 @@ function App() {
   );
 }
 
+// Exporting module for importing to component.
 export default App;
