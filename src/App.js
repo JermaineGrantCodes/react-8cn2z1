@@ -14,7 +14,7 @@ function App() {
     {patientId: 4, patientName: 'Roger Adams', treatment: 'Blood Transfusion'},
     {patientId: 5, patientName: 'Ashley Roberts', treatment: 'Accupuncture'}
      ];
-  
+// Using JSON stringify to convert array objects into string format.
   const recordsText = JSON.stringify(records);  
 
   return (
